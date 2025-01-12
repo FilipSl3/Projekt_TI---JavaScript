@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja do Nauki Słówek</title>
+    <link rel="stylesheet" href="naukaSlowek.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikacja do Nauki Słówek</h1>
+        <div class="first">
+            <h2>Quiz</h2>
+            <div class="quiz-section">
+                <label for="rounds">Wybierz liczbę rund:</label>
+                <input type="number" id="rounds" min="1" value="5">
+                <button id="startQuiz">Rozpocznij quiz</button>
+                <div id="quiz" style="display: none;">
+                    <p id="quizQuestion"></p>
+                    <input type="text" id="quizAnswer" placeholder="Twoja odpowiedź">
+                    <button id="submitAnswer">Sprawdź</button>
+                    <p id="quizFeedback"></p>
+                    <p id="quizScore"></p>
+                    <p id="quizRounds"></p>
+                    <button id="resetQuiz" style="display: none;">Resetuj quiz</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="seccond">
+            <h2>Dodaj nowe słówko</h2>
+            <form id="wordForm">
+                <label for="word">Słówko:</label>
+                <input type="text" id="word" required>
+                <label for="translation">Tłumaczenie:</label>
+                <input type="text" id="translation" required>
+                <button type="submit">Dodaj słówko</button>
+            </form>
+
+            <h2>Twoje słówka</h2>
+            <div id="wordList" class="word-list"></div>
+        </div>
+        
+    </div>
+
+    <script src="naukaSlowek.js">
+        
+    </script>
+</body>
+</html>

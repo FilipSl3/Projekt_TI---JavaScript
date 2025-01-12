@@ -1,0 +1,49 @@
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   margin: 20px;
+}
+.container {
+   max-width: 600px;
+   margin: 0 auto;
+   text-align: center;
+   align-items: center;
+}
+input, button, select {
+   display: block;
+   margin: 10px 0;
+   padding: 10px;
+   width: 90%;
+   margin: auto;
+}
+.word-list, .quiz-section {
+   margin-top: 20px;
+}
+.word {
+   background: #f4f4f4;
+   padding: 10px;
+   border: 1px solid #ddd;
+   margin-bottom: 10px;
+}
+button{
+   border: none;
+   border-radius: 25px;
+   width: 200px;
+   background-color: rgb(206, 206, 179);
+   margin-top: 15px;
+}
+button:hover{
+  scale: 1.07;
+  transition: 150ms;
+}
+.first{
+   border: 2px solid black;
+   border-radius: 25px 25px 0 0;
+   padding: 5px 20px 30px 20px;
+   margin-bottom: -2px;
+}
+.seccond{
+   border: 2px solid black;
+   padding: 5px 20px 30px 20px;
+   border-radius: 0 0 25px 25px;
+}
