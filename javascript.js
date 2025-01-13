@@ -71,9 +71,17 @@ const wordForm = document.getElementById('wordForm');
         function nextQuestion() {
             if (round >= totalRounds) {
                 const percentage = ((score / totalRounds) * 100).toFixed(2);
-                quizFeedback.textContent = `Koniec quizu! Twój wynik: ${score} z ${totalRounds} (${percentage}%)`;
-                quizFeedback.style.color = 'blue';
-                resetQuizButton.style.display = 'block';
+                if(percentage > 50 && percentage <= 75){
+                    quizFeedback.style.color = 'orange';
+                }
+                else if(percentage > 75){
+                    quizFeedback.style.color = 'green';
+                }
+                else{
+                    quizFeedback.style.color = 'red';
+                }
+                    quizFeedback.textContent = `Koniec quizu! Twój wynik: ${score} z ${totalRounds} (${percentage}%)`;
+                    resetQuizButton.style.display = 'block';
                 return;
             }
 
