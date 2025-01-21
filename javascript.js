@@ -1,4 +1,4 @@
-const wordForm = document.getElementById('wordForm');
+        const wordForm = document.getElementById('wordForm');
         const wordList = document.getElementById('wordList');
         const startQuizButton = document.getElementById('startQuiz');
         const quizSection = document.getElementById('quiz');
@@ -80,8 +80,8 @@ const wordForm = document.getElementById('wordForm');
                 else{
                     quizFeedback.style.color = 'red';
                 }
-                    quizFeedback.textContent = `Koniec quizu! Twój wynik: ${score} z ${totalRounds} (${percentage}%)`;
-                    resetQuizButton.style.display = 'block';
+                quizFeedback.textContent = `Koniec quizu! Twój wynik: ${score} z ${totalRounds} (${percentage}%)`;
+                resetQuizButton.style.display = 'block';
                 return;
             }
 
